@@ -1,0 +1,6 @@
+from random import randint
+coin_number = int(input('Ввведите общее количество монет:    '))
+eagle_number = randint(1, coin_number-1)
+print(f'Количество монет гербом вверх равно {eagle_number}')
+minimal_number = min(eagle_number, coin_number - eagle_number)
+print(f'Минимальное количество монет, которое необходимо перевернуть, чтобы все монеты были одной стороной вверх равно {minimal_number}')
